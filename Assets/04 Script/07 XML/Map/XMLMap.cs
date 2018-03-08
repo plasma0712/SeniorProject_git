@@ -10,7 +10,6 @@ public class XMLMap : Singleton<XMLMap>
     int MapAmount = 0;
     int EightMultiple = 8;
 
-
     string filePath = "./Assets/Resources/MapList.xml";
 
     private void Awake()
@@ -34,9 +33,20 @@ public class XMLMap : Singleton<XMLMap>
                     iMapTileY = i,
                     fType = 0
                 };
-                Maps.Add(Map);  //위치 애매 바깥for문 끝나기전일 수도있음 확인요망
+                Maps.Add(Map);  //위치 애매 바깥for문 끝나기전일 수도있음 확인요망 // 정상적으로 XML에 저장됨
             }
         }
+
+        for(int j=0; j<1;j++)                   // 맵크기를 나타내기위해 만듦
+        {
+            XMLMapData MapSize = new XMLMapData
+            {
+                iMapNumber = MapCount()
+            };
+            Maps.Add(MapSize);
+        }
+
+
         XmlDocument Document = new XmlDocument();
         XmlElement MapListElement = Document.CreateElement("MapList");
         Document.AppendChild(MapListElement);
@@ -51,10 +61,21 @@ public class XMLMap : Singleton<XMLMap>
 
             MapListElement.AppendChild(MapElement);
         }
+
+        XmlDocument MapSizeDocument = new XmlDocument();
+        XmlElement MapSizeListElement = MapSizeDocument.CreateElement("MapSize");
+        MapSizeDocument.AppendChild(MapSizeListElement);
+
+        foreach(XMLMapData MapSize in Maps)
+        {
+            XmlElement MapSizeElement = MapSizeDocument.CreateElement("Map");
+            MapSizeElement.SetAttribute("iMapNumber", MapSize.iMapNumber.ToString());
+
+            MapSizeListElement.AppendChild(MapSizeElement);
+        }
+
         Document.Save(filePath);
     }
-
-    
 
     public void LoadXml()
     {
@@ -79,6 +100,19 @@ public class XMLMap : Singleton<XMLMap>
     public int MapLength()
     {
         return Maps.Count;
+    }
+
+    public int MapCount()
+    {
+        if(Maps.Count%64 ==0)
+        {
+            MapAmount = (Maps.Count / 64);
+            return MapAmount;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
     public XMLMapData GetMapData(int _num)

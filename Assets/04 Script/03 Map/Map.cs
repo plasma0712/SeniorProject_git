@@ -9,6 +9,7 @@ public class Map : Singleton<Map>
 
     public int TileXData=0;
     public int TileYData=0;
+    public int MapCount;
 
     XMLMapData Current;
     Vector3 vPos;
@@ -43,6 +44,12 @@ public class Map : Singleton<Map>
             instance.transform.parent = Parent.transform; // 인스턴트로 생성된 오브젝트를 정리하기 위해서 이용함.
             TileList.Add(instance);                       // 인스턴트로 생성된 오브젝트를 리스트로 넣어 관리하기 위해 함.
         }
+    }
+
+    public void MapAddFuction()
+    {
+        XMLMap.Instance.AddXmlNode("가", "가", "가", "가");
+        MapCount = XMLMap.Instance.MapLength();
     }
 
 }

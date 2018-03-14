@@ -38,7 +38,7 @@ public class CharacteristicUsedPointValue : Singleton<CharacteristicUsedPointVal
             {
                 CharacteristicUIData.Instance.CharacteristicUsedPoint(CUPV_CharacteristicPointValue);// 플레이어가 특성포인트 사용
                 CharacteristicUIData.Instance.CharacteristicPointLeave();// 플레이어가 가지고있는 최종 특성포인트 계산함수
-                XMLCharInfoCharacteristic.Instance.AddXmlNode(CUPV_CharacteristicName.ToString(), "1");
+                XMLCharInfoCharacteristic.Instance.AddXmlNode(CUPV_CharacteristicName.ToString(), "1"); // 이름,"1"=>Bool값
                 XMLCharInfoCharacteristicPoint.Instance.CreateXml();
                 XMLCharInfoCharacteristic.Instance.LoadXml();
                 CharacteristicUIXMLLoad.Instance.CurrentCharacteristicPointText();

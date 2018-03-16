@@ -234,7 +234,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 576771376}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1211913840}
+        m_MethodName: MapAddFuction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &576771376
@@ -571,6 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TileXData: 0
   TileYData: 0
+  MapCount: 0
   Tile: {fileID: 1094292505796596, guid: 288436976e95b8b4ba3c059f4c79c07d, type: 2}
   Parent: {fileID: 1211913837}
   TileList: []

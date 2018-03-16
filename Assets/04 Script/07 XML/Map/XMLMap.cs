@@ -37,16 +37,6 @@ public class XMLMap : Singleton<XMLMap>
             }
         }
 
-        for(int j=0; j<1;j++)                   // 맵크기를 나타내기위해 만듦
-        {
-            XMLMapData MapSize = new XMLMapData
-            {
-                iMapNumber = MapCount()
-            };
-            Maps.Add(MapSize);
-        }
-
-
         XmlDocument Document = new XmlDocument();
         XmlElement MapListElement = Document.CreateElement("MapList");
         Document.AppendChild(MapListElement);
@@ -62,17 +52,6 @@ public class XMLMap : Singleton<XMLMap>
             MapListElement.AppendChild(MapElement);
         }
 
-        XmlDocument MapSizeDocument = new XmlDocument();
-        XmlElement MapSizeListElement = MapSizeDocument.CreateElement("MapSize");
-        MapSizeDocument.AppendChild(MapSizeListElement);
-
-        foreach(XMLMapData MapSize in Maps)
-        {
-            XmlElement MapSizeElement = MapSizeDocument.CreateElement("Map");
-            MapSizeElement.SetAttribute("iMapNumber", MapSize.iMapNumber.ToString());
-
-            MapSizeListElement.AppendChild(MapSizeElement);
-        }
 
         Document.Save(filePath);
     }
@@ -95,6 +74,27 @@ public class XMLMap : Singleton<XMLMap>
             };
             Maps.Add(Map);
         }
+    }
+
+    public void AddXmlNode(string iMapTileName,string iMapTileX,string iMapTileY, string fType)
+    {
+        Maps = new List<XMLMapData>();
+        XmlDocument Document = new XmlDocument();
+        Document.Load(filePath);
+        XmlElement MapListElement = Document["MapList"];
+
+        XmlNode node = Document.DocumentElement;
+
+        XmlElement childNode = Document.CreateElement("Map");
+
+        childNode.SetAttribute("iMapTileName",iMapTileName);
+        childNode.SetAttribute("iMapTileX",iMapTileX);
+        childNode.SetAttribute("iMapTileY",iMapTileY);
+        childNode.SetAttribute("fType",fType);
+
+        MapListElement.AppendChild(childNode);
+
+        Document.Save(filePath);
     }
 
     public int MapLength()

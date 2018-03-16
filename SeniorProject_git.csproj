@@ -314,6 +314,7 @@
     <Compile Include="Assets\04 Script\08 CoreDataBase\GameMapData.cs" />
     <Compile Include="Assets\04 Script\08 CoreDataBase\GameUiDataBase.cs" />
     <Compile Include="Assets\04 Script\08 CoreDataBase\Singleton.cs" />
+    <Compile Include="Assets\04 Script\09 CommonScript\SceneChange.cs" />
     <Compile Include="Assets\EnemyAI.cs" />
     <Compile Include="Assets\MapTilePostionTool.cs" />
     <Compile Include="Assets\Movement.cs" />

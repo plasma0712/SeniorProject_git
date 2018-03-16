@@ -1,11 +1,3 @@
 <LobbyTopUIList>
-<<<<<<< HEAD
   <LobbyTopUI iGold="0" iSoul="0" iHeart="0" />
-=======
-<<<<<<< HEAD
-  <LobbyTopUI iGold="9000" iSoul="0" iHeart="0" />
-=======
-  <LobbyTopUI iGold="16000" iSoul="0" iHeart="0" />
->>>>>>> a3c310353c0c0851ecdb51af8fc1095596e449ae
->>>>>>> ad43d30d7917af54ae3c5fda3ae0e0f71d381bcf
 </LobbyTopUIList>

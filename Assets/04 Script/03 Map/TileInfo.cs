@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TileInfo : MonoBehaviour
+public class TileInfo : Singleton<TileInfo>
 {
     public GameObject []TileType;
     

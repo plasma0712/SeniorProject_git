@@ -24,7 +24,7 @@ public class Map : Singleton<Map>
     //public GameObject Tile;
     public GameObject Parent;                               // 맵 타일 
     [SerializeField]
-    List<GameObject> TileList = new List<GameObject>();
+    public List<GameObject> TileList = new List<GameObject>();
 
 
     private void Start()
@@ -40,7 +40,7 @@ public class Map : Singleton<Map>
         tileTypeData = Current.fType;
         vPos.x = TileX * TileXData;
         vPos.y = TileY * TileYData;
-       
+
         //Debug.Log("X_Pos : " + TileXData + "Y_Pos : " + TileYData);
     }
 

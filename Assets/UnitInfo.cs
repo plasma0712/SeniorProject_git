@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Timers;
 
-public class UnitInfo : Singleton<UnitInfo>
+public abstract class UnitInfo : MonoBehaviour
 {
     // float fHp;
     // float fLevel;

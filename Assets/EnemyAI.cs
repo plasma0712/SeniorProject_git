@@ -46,7 +46,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("OnTriggerEnter2D 에 들어옴");
+        //Debug.Log("OnTriggerEnter2D 에 들어옴");
         if (collision.gameObject.tag == "Enemy")
         {
             bAttack = true;
@@ -76,7 +76,7 @@ public class EnemyAI : MonoBehaviour
         while(true)
         {
             yield return new WaitForSeconds(2.0f);
-            Debug.Log("AttackBoolCheck 들어옴 과연 반복할까?");
+            //Debug.Log("AttackBoolCheck 들어옴 과연 반복할까?");
             bAttack = false;
             StopCoroutine("AttackBoolCheck");
 

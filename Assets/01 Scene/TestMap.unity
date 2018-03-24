@@ -880,6 +880,7 @@ MonoBehaviour:
   - {fileID: 1855741644992502, guid: 5a1b299c583633444ac17e4381f06293, type: 2}
   - {fileID: 1213288040787074, guid: 027f1cafb9f7db141a917beee884d511, type: 2}
   - {fileID: 1568459371191046, guid: 16a98a0b363ee674489ae8625e0f0191, type: 2}
+  pos: 0000000000000000
 --- !u!1 &1215017165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,7 +1443,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1950403851}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 283deedfbe5ba904daf270f2ff591780, type: 3}
   m_Name: 

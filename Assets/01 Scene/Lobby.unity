@@ -1303,6 +1303,7 @@ GameObject:
   - component: {fileID: 382679210}
   - component: {fileID: 382679211}
   - component: {fileID: 382679212}
+  - component: {fileID: 382679213}
   m_Layer: 0
   m_Name: 'XML_TotalManagement '
   m_TagString: Untagged
@@ -1398,6 +1399,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a330ff0bce008a847a0c01c4ac249759, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &382679213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 382679204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9564d19a2fc32e3429d42b3592dad2cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &400968439

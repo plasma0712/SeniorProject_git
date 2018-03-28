@@ -127,7 +127,7 @@ public enum AttackType
     Magic
 }
 
-enum DefenceType
+public enum DefenceType
 {
     Small,
     Medium,

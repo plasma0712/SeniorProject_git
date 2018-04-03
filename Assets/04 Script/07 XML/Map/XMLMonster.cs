@@ -5,7 +5,9 @@ using System.Xml;
 
 public class XMLMonster : Singleton<XMLMonster>
 {
-    List<XMLMonsterData> Monsters;
+    public Sprite[] MonsterSprites;
+
+    public List<XMLMonsterData> Monsters;
 
     string filePath = "./Assets/Resources/MonsterList.xml";
 
@@ -13,6 +15,8 @@ public class XMLMonster : Singleton<XMLMonster>
     {
         //CreateXml();
         LoadXml();
+
+        MonsterSelectListManager.Instance.Init();
     }
 
     public void CreateXml() // 기본 틀을 만들기 위해서 제작한 함수

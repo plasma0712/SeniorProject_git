@@ -19,3 +19,16 @@ public class XMLMonsterData
     public float fGold;
     public float fSoul;
 }
+
+[System.Serializable]
+public class MonsterListBase
+{
+    float fNumber;
+
+    public void Init(float _fNumber)
+    {
+        fNumber = _fNumber;
+    }
+
+
+}

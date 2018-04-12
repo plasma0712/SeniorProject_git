@@ -6,6 +6,8 @@ public class TileInfo : Singleton<TileInfo>
 {
     public GameObject[] TileType;
 
+    public Unit unit;
+
     public int[] pos = new int[2];
 
     public bool MyUnitTile(int PosX,int PosY)        // IsNearMyTile
@@ -20,6 +22,18 @@ public class TileInfo : Singleton<TileInfo>
         }
 
         return false;
+    }
+
+    public bool UnitSummon()
+    {
+        if(unit != null)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 
     //public TileInfo[] MyTile(bool _isIncludeThisTile = false)

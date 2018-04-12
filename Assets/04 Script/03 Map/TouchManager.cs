@@ -12,6 +12,8 @@ public class TouchManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     TileInfo MapTile;
     bool bMonsters;
 
+    MonsterSelectListManager Monsters;
+
     void IBeginDragHandler.OnBeginDrag(PointerEventData eventData)
     {
     }
@@ -22,7 +24,7 @@ public class TouchManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     void IEndDragHandler.OnEndDrag(PointerEventData eventData)
     {
-        
+        if()
     }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)

@@ -530,7 +530,6 @@ GameObject:
   - component: {fileID: 907477315}
   - component: {fileID: 907477314}
   - component: {fileID: 907477318}
-  - component: {fileID: 907477319}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -631,17 +630,6 @@ MonoBehaviour:
   MonsterListPreFab: {fileID: 1462572597968254, guid: fb3e904c2a4156e4a85641adbdf9e842,
     type: 2}
   ContentRectTrans: {fileID: 675092832}
---- !u!114 &907477319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 907477313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cef35666b14efee4e8f41354c72e5727, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &917631669
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Map : Singleton<Map>
 {
-    float TileX = 0.62f;
-    float TileY = 0.62f;
+    public const float TileX = 0.62f;
+    public const float TileY = 0.62f;
 
     int TileArrX = 0;
     int TileArrY = 0;
@@ -265,5 +265,6 @@ public class Map : Singleton<Map>
         Culling();
     }
 
+    
 
 }

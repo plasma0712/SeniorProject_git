@@ -24,7 +24,7 @@ public class TouchManager : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     void IEndDragHandler.OnEndDrag(PointerEventData eventData)
     {
-        if()
+
     }
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData)

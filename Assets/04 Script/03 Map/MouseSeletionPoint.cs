@@ -2,14 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseSeletionPoint : MonoBehaviour
+public class MouseSeletionPoint : Singleton<MouseSeletionPoint>
 {
-    public GameObject followingCube;
+    public GameObject My;
 
-    void Update()
+    public void OnMouseEnter()
     {
-        Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 5));
-        followingCube.transform.position = newPosition;
+        if (MonsterSummon.Instance.bBuy == true)
+        {
+            MonsterSummon.Instance.TileIn = true;
+            MonsterSummon.Instance.vPoint = My.transform.position;
+        }
     }
-
+    public void OnMouseExit()
+    {
+        if (MonsterSummon.Instance.bBuy == true)
+        {
+            MonsterSummon.Instance.vPoint = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 5)); ;
+        }
+    }
 }

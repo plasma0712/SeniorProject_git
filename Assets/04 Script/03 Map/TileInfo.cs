@@ -36,18 +36,5 @@ public class TileInfo : Singleton<TileInfo>
         }
     }
 
-    //public TileInfo[] MyTile(bool _isIncludeThisTile = false)
-    //{
-    //    if (_isIncludeThisTile)
-    //    {
-    //        return new TileInfo[XMLMap.Instance.MapLength();]
-    //
-    //            
-    //    }
-    //    else
-    //    {
-    //        return
-    //    }
-    //}
 
 }

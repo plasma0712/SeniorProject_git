@@ -228,11 +228,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e8ce0e2c51918543b61053c79b3bce7, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &293218102 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1271960031416718, guid: 4e8ce0e2c51918543b61053c79b3bce7,
-    type: 2}
-  m_PrefabInternal: {fileID: 284591988}
 --- !u!1001 &328319883
 Prefab:
   m_ObjectHideFlags: 0
@@ -487,7 +482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -219.58496}
+  m_AnchoredPosition: {x: 0, y: -219.58493}
   m_SizeDelta: {x: 0, y: 206.79999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &675092833
@@ -806,7 +801,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1211913837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.30708134, y: 0.14144906, z: -10.017071}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -838,6 +833,7 @@ MonoBehaviour:
   TileYData: 0
   MapCount: 0
   MapSize: 0
+  vPos: {x: 0, y: 0, z: 0}
   Parent: {fileID: 1211913837}
   TileList: []
 --- !u!114 &1211913841
@@ -861,6 +857,7 @@ MonoBehaviour:
   - {fileID: 1855741644992502, guid: 5a1b299c583633444ac17e4381f06293, type: 2}
   - {fileID: 1213288040787074, guid: 027f1cafb9f7db141a917beee884d511, type: 2}
   - {fileID: 1568459371191046, guid: 16a98a0b363ee674489ae8625e0f0191, type: 2}
+  unit: {fileID: 0}
   pos: 0000000000000000
 --- !u!1 &1223672915
 GameObject:
@@ -931,6 +928,9 @@ MonoBehaviour:
   - {fileID: 1190794005228202, guid: 0b18deb7e8ec89c4b97d2f559b62e135, type: 2}
   - {fileID: 1190794005228202, guid: 0b18deb7e8ec89c4b97d2f559b62e135, type: 2}
   iNumber: 0
+  bBuy: 0
+  vPoint: {x: 0, y: 0, z: 0}
+  TileIn: 0
 --- !u!1 &1266784136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1187,6 @@ GameObject:
   - component: {fileID: 1950403854}
   - component: {fileID: 1950403853}
   - component: {fileID: 1950403852}
-  - component: {fileID: 1950403856}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1258,18 +1257,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1950403856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1950403851}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 283deedfbe5ba904daf270f2ff591780, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followingCube: {fileID: 293218102}
 --- !u!1 &2138293562
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,7 +28,7 @@ public class Map : Singleton<Map>
     float TileType;
 
     XMLMapData Current;
-    Vector3 vPos;
+    public Vector3 vPos;
     //public GameObject Tile;
     public GameObject Parent;                               // 맵 타일 
     [SerializeField]

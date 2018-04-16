@@ -21,6 +21,11 @@ public class MonsterSummon : Singleton<MonsterSummon>
 
     public bool TileIn = false;
 
+    bool PossibleSummon = false; // 소환이 가능한지 않한지 확인하기 위한 bool TileNumbering이 1인경우에만 가능하게 할것
+
+    [HideInInspector]
+    public int iTileNumbering;
+
     void Update()   // 코루틴으로 변경예정 
     {
         if (bBuy == true)
@@ -83,6 +88,7 @@ public class MonsterSummon : Singleton<MonsterSummon>
         bBuy = true;
         Debug.Log(iNumber);
         followingSummonMonster = Instantiate(BuyMonsterSummon[iNumber], new Vector3(0, 0, 0), Quaternion.identity);
+        followingSummonMonster.GetComponent<BoxCollider2D>().enabled = false;
     }
 
     public void MouseClick()
@@ -91,9 +97,17 @@ public class MonsterSummon : Singleton<MonsterSummon>
         {
             if (Input.GetMouseButtonDown(0))        // 소환 시키기
             {
-                followingSummonMonster = Dummy;
-                bBuy = false;
-                TileIn = false;
+                if (iTileNumbering == 1 &&MonsterNotOverlap.Instance.DoingSummon ==true)
+                {
+                    followingSummonMonster.GetComponent<BoxCollider2D>().enabled = true;
+                    followingSummonMonster = Dummy;
+                    bBuy = false;
+                    TileIn = false;
+                }
+                else
+                {
+                    return;
+                }
             }
             else if (Input.GetMouseButtonDown(1))   // 소환 취소 
             {

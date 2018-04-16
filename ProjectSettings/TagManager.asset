@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Enemy
+  - MapTile
+  - Monster&Enemy
   layers:
   - Default
   - TransparentFX
@@ -41,4 +42,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: MapTile
+    uniqueID: 3462561503
+    locked: 0
+  - name: Monster&Enemy
+    uniqueID: 559029445
     locked: 0

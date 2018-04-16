@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61359540914257022}
   m_Layer: 0
   m_Name: MapTile_Type_04
-  m_TagString: Untagged
+  m_TagString: MapTile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,7 +51,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   My: {fileID: 1360030133812950}
+  TileNumbering: 0
 --- !u!212 &212810168882459720
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -110,8 +111,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -832405793
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300048, guid: 05c89f52510cd4e4e8118ba598cb92d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

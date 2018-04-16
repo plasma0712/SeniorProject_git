@@ -6,13 +6,17 @@ public class MouseSeletionPoint : Singleton<MouseSeletionPoint>
 {
     public GameObject My;
 
+    public int TileNumbering = 0; // 일단 1일 경우에만 소환이 가능하게 하자.
+
     public void OnMouseEnter()
     {
         if (MonsterSummon.Instance.bBuy == true)
         {
+            MonsterSummon.Instance.iTileNumbering = TileNumbering;
             MonsterSummon.Instance.TileIn = true;
             MonsterSummon.Instance.vPoint = My.transform.position;
         }
+
     }
     public void OnMouseExit()
     {

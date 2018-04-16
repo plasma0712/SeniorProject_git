@@ -931,6 +931,7 @@ MonoBehaviour:
   bBuy: 0
   vPoint: {x: 0, y: 0, z: 0}
   TileIn: 0
+  iTileNumbering: 0
 --- !u!1 &1266784136
 GameObject:
   m_ObjectHideFlags: 0

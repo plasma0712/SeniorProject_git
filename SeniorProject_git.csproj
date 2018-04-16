@@ -299,6 +299,7 @@
     <Compile Include="Assets\04 Script\03 Map\MapXMLLoad.cs" />
     <Compile Include="Assets\04 Script\03 Map\MonsterData.cs" />
     <Compile Include="Assets\04 Script\03 Map\MonsterDataSave.cs" />
+    <Compile Include="Assets\04 Script\03 Map\MonsterNotOverlap.cs" />
     <Compile Include="Assets\04 Script\03 Map\MonsterSelectListManager.cs" />
     <Compile Include="Assets\04 Script\03 Map\MonsterSummon.cs" />
     <Compile Include="Assets\04 Script\03 Map\MouseSeletionPoint.cs" />

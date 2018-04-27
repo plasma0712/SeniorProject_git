@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class MonsterDataSave : MonoBehaviour
+public class MonsterDataSave :Singleton<MonsterDataSave>
 {
     [SerializeField]
     Image iMonsterImage;

@@ -112,4 +112,8 @@ public class XMLMonster : Singleton<XMLMonster>
         return null;
     }
 
+    public int MonsterLegth()
+    {
+        return Monsters.Count;
+    }
 }

@@ -6,6 +6,7 @@ public class MonsterSummon : Singleton<MonsterSummon>
 {
     public GameObject[] BuyMonsterSummon;
 
+    public int iCount;
     public int iNumber;
 
     GameObject followingSummonMonster;
@@ -33,7 +34,7 @@ public class MonsterSummon : Singleton<MonsterSummon>
             Vector3 NewPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z + 5));
             //Debug.Log("마우스 좌표 X : " + NewPosition.x + " 마우스 좌표 Y : " + NewPosition.y);
             //followingSummonMonster = Instantiate(BuyMonsterSummon[iNumber], NewPosition, Quaternion.identity);
-            MouseClick();
+            MouseClick(vPoint.x, vPoint.y);
             if (bBuy == true)
             {
                 if (TileIn == false)
@@ -42,7 +43,7 @@ public class MonsterSummon : Singleton<MonsterSummon>
 
                 }
                 else
-                { 
+                {
                     followingSummonMonster.transform.position = vPoint;
                 }
             }
@@ -83,7 +84,6 @@ public class MonsterSummon : Singleton<MonsterSummon>
     public void Summon(int _iNumber)
     {
         // 자원소모하고 나서 진행이 되야하기 때문에 여기서 할 예정
-
         iNumber = _iNumber;
         bBuy = true;
         Debug.Log(iNumber);
@@ -91,18 +91,29 @@ public class MonsterSummon : Singleton<MonsterSummon>
         followingSummonMonster.GetComponent<BoxCollider2D>().enabled = false;
     }
 
-    public void MouseClick()
+    public void SummonCurring(int _iNumber,float _vPosX, float _vPosY)
+    {
+        iNumber = _iNumber;
+        Instantiate(BuyMonsterSummon[iNumber], new Vector3(_vPosX, _vPosY, 0), Quaternion.identity);
+    }
+
+    public void MouseClick(float fPosX,float fPosY)
     {
         if (bBuy == true)
         {
             if (Input.GetMouseButtonDown(0))        // 소환 시키기
             {
-                if (iTileNumbering == 1 &&MonsterNotOverlap.Instance.DoingSummon ==true)
+                if (iTileNumbering == 1 && MonsterNotOverlap.Instance.DoingSummon == true)
                 {
                     followingSummonMonster.GetComponent<BoxCollider2D>().enabled = true;
                     followingSummonMonster = Dummy;
+                    //XMLMonsterSummon.Instance.AddXmlNode(MonsterDataSave.Instance.fNumber.ToString(), (followingSummonMonster.transform.position.x).ToString(), (followingSummonMonster.transform.position.y).ToString());
+                    //XMLMonsterSummon.Instance.AddXmlNode("1","1","1");
+                    XMLMonsterSummon.Instance.AddXmlNode(XMLMonsterSummon.Instance.MonsterSummonLegth().ToString(),iNumber.ToString(),fPosX.ToString() , fPosY.ToString());
                     bBuy = false;
                     TileIn = false;
+
+                    Debug.Log("가나다라마바사아자차카타파하");
                 }
                 else
                 {

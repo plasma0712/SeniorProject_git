@@ -8,7 +8,7 @@ public class MonsterNotOverlap : Singleton<MonsterNotOverlap>
 
     private void Awake()
     {
-        gameObject.GetComponent<BoxCollider2D>;
+        //gameObject.GetComponent<BoxCollider2D>;
     }
     private void OnMouseEnter()
     {

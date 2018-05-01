@@ -13,6 +13,7 @@ public class MonsterPlacement : Singleton<MonsterPlacement>
 
     XMLMonsterSummonData Current;
 
+    [HideInInspector]
     public Vector3 vPos;
 
     GameObject Monster;

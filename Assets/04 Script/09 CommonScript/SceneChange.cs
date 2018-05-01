@@ -14,4 +14,9 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("Lobby");
     }
+
+    public void IntroLobbySceneChange()
+    {
+        SceneManager.LoadScene("Lobby");
+    }
 }

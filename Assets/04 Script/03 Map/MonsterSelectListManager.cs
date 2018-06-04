@@ -16,6 +16,10 @@ public class MonsterSelectListManager : Singleton<MonsterSelectListManager>
 
     //List<XMLMonsterData> MonsterDatas;
 
+    private void Start()
+    {
+        Init();
+    }
 
 
     public void Init()
@@ -27,6 +31,7 @@ public class MonsterSelectListManager : Singleton<MonsterSelectListManager>
             tmp = Instantiate(MonsterListPreFab, ContentRectTrans);
             Monsters.Add(tmp.GetComponent<MonsterDataSave>());
             Monsters[Monsters.Count - 1].Init(XMLMonster.Instance.Monsters[i]);
+
         }
         ContentRectTrans.sizeDelta = new Vector2(ContentRectTrans.sizeDelta.x, 230*XMLMonster.Instance.Monsters.Count);
     }

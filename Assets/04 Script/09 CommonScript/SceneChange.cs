@@ -14,4 +14,9 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("Lobby");
     }
+
+    public void LobbyGameStartSceneChange()
+    {
+        SceneManager.LoadScene("TestMap2");
+    }
 }

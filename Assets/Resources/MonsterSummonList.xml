@@ -1,3 +1,9 @@
 <MonsterSummonList>
-  <MonsterSummon iCount="0" InherentNumber="0" fPosX="0.62" fPosY="2.48" />
+  <MonsterSummon iCount="0" InherentNumber="0" fPosX="0.62" fPosY="4.96" />
+  <MonsterSummon iCount="0" InherentNumber="1" fPosX="0.62" fPosY="4.34" />
+  <MonsterSummon iCount="0" InherentNumber="2" fPosX="0.62" fPosY="3.72" />
+  <MonsterSummon iCount="0" InherentNumber="3" fPosX="0.62" fPosY="3.1" />
+  <MonsterSummon iCount="0" InherentNumber="4" fPosX="0.62" fPosY="2.48" />
+  <MonsterSummon iCount="0" InherentNumber="5" fPosX="0.62" fPosY="1.86" />
+  <MonsterSummon iCount="0" InherentNumber="6" fPosX="0.62" fPosY="1.24" />
 </MonsterSummonList>

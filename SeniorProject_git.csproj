@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -320,6 +318,8 @@
     <Compile Include="Assets\04 Script\07 XML\CharInfo\CharInfo_Tendency\XMLCharInfoTendencyData.cs" />
     <Compile Include="Assets\04 Script\07 XML\LobbyTopUI\XMLLobbyTopUI.cs" />
     <Compile Include="Assets\04 Script\07 XML\LobbyTopUI\XMLLobbyTopUIData.cs" />
+    <Compile Include="Assets\04 Script\07 XML\Map\XMLEnemy.cs" />
+    <Compile Include="Assets\04 Script\07 XML\Map\XMLEnemyData.cs" />
     <Compile Include="Assets\04 Script\07 XML\Map\XMLMap.cs" />
     <Compile Include="Assets\04 Script\07 XML\Map\XMLMapData.cs" />
     <Compile Include="Assets\04 Script\07 XML\Map\XMLMonster.cs" />
@@ -331,18 +331,22 @@
     <Compile Include="Assets\04 Script\08 CoreDataBase\GameUiDataBase.cs" />
     <Compile Include="Assets\04 Script\08 CoreDataBase\Singleton.cs" />
     <Compile Include="Assets\04 Script\09 CommonScript\SceneChange.cs" />
+    <Compile Include="Assets\BulletController.cs" />
+    <Compile Include="Assets\BulletSummon.cs" />
     <Compile Include="Assets\EnemyAI.cs" />
+    <Compile Include="Assets\EnemyMove.cs" />
+    <Compile Include="Assets\EnemySummon.cs" />
     <Compile Include="Assets\MapTilePostionTool.cs" />
     <Compile Include="Assets\Movement.cs" />
+    <Compile Include="Assets\RotationBox.cs" />
+    <Compile Include="Assets\RotationBoxSummon.cs" />
     <Compile Include="Assets\UnitInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\CharacteristicList.xml" />
     <None Include="Assets\Resources\CharacteristicPointList.xml" />
     <None Include="Assets\Resources\LobbyTopUIList.xml" />
-    <None Include="Assets\Resources\MapList.xml">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Assets\Resources\MapList.xml" />
     <None Include="Assets\Resources\MenualList_InherentNumber.xml" />
     <None Include="Assets\Resources\MonsterList.xml" />
     <None Include="Assets\Resources\MonsterSummonList.xml" />

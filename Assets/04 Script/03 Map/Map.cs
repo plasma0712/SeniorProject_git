@@ -132,15 +132,31 @@ public class Map : Singleton<Map>
                     case 0:
                         if (TileX == 0)
                         {
-                            TileType = 1;
+                            TileType = 3;
                         }
-                        else if (TileX == 6)
+                        else if (TileX == 1)
                         {
-                            TileType = 4;
+                            TileType = 5;
+                        }
+                        else if (TileX == 2)
+                        {
+                            TileType = 3;
+                        }
+                        else if (TileX == 3)
+                        {
+                            TileType = 0;
+                        }
+                        else if (TileX == 4)
+                        {
+                            TileType = 3;
+                        }
+                        else if (TileX == 5)
+                        {
+                            TileType = 5;
                         }
                         else
                         {
-                            TileType = 8;
+                            TileType = 3;
                         }
                         break;
 
@@ -149,14 +165,31 @@ public class Map : Singleton<Map>
                         {
                             TileType = 5;
                         }
-                        else if (TileX == 6)
-                        {
-                            TileType = 7;
-                        }
-                        else
+                        else if (TileX == 1)
                         {
                             TileType = 0;
                         }
+                        else if (TileX == 2)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 3)
+                        {
+                            TileType = 0;
+                        }
+                        else if (TileX == 4)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 5)
+                        {
+                            TileType = 0;
+                        }
+                        else
+                        {
+                            TileType = 5;
+                        }
+
                         break;
 
                     case 2:
@@ -164,13 +197,29 @@ public class Map : Singleton<Map>
                         {
                             TileType = 5;
                         }
-                        else if (TileX == 6)
+                        else if (TileX == 1)
                         {
-                            TileType = 7;
+                            TileType = 0;
+                        }
+                        else if (TileX == 2)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 3)
+                        {
+                            TileType = 0;
+                        }
+                        else if (TileX == 4)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 5)
+                        {
+                            TileType = 0;
                         }
                         else
                         {
-                            TileType = 0;
+                            TileType = 5;
                         }
                         break;
 
@@ -179,18 +228,62 @@ public class Map : Singleton<Map>
                         {
                             TileType = 5;
                         }
-                        else if (TileX == 6)
-                        {
-                            TileType = 7;
-                        }
-                        else
+                        else if (TileX == 1)
                         {
                             TileType = 0;
                         }
+                        else if (TileX == 2)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 3)
+                        {
+                            TileType = 0;
+                        }
+                        else if (TileX == 4)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 5)
+                        {
+                            TileType = 0;
+                        }
+                        else
+                        {
+                            TileType = 5;
+                        }
+
                         break;
 
                     case 4:
-                        TileType = 0;
+                        if (TileX == 0)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 1)
+                        {
+                            TileType = 0;
+                        }
+                        else if (TileX == 2)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 3)
+                        {
+                            TileType = 0;
+                        }
+                        else if (TileX == 4)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 5)
+                        {
+                            TileType = 0;
+                        }
+                        else
+                        {
+                            TileType = 5;
+                        }
                         break;
 
                     case 5:
@@ -198,13 +291,29 @@ public class Map : Singleton<Map>
                         {
                             TileType = 5;
                         }
-                        else if (TileX == 6)
+                        else if (TileX == 1)
                         {
-                            TileType = 7;
+                            TileType = 0;
+                        }
+                        else if (TileX == 2)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 3)
+                        {
+                            TileType = 0;
+                        }
+                        else if (TileX == 4)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 5)
+                        {
+                            TileType = 0;
                         }
                         else
                         {
-                            TileType = 0;
+                            TileType = 5;
                         }
                         break;
 
@@ -213,13 +322,29 @@ public class Map : Singleton<Map>
                         {
                             TileType = 5;
                         }
-                        else if (TileX == 6)
+                        else if (TileX == 1)
                         {
-                            TileType = 7;
+                            TileType = 0;
+                        }
+                        else if (TileX == 2)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 3)
+                        {
+                            TileType = 0;
+                        }
+                        else if (TileX == 4)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 5)
+                        {
+                            TileType = 0;
                         }
                         else
                         {
-                            TileType = 0;
+                            TileType = 5;
                         }
                         break;
 
@@ -228,28 +353,60 @@ public class Map : Singleton<Map>
                         {
                             TileType = 5;
                         }
-                        else if (TileX == 6)
+                        else if (TileX == 1)
                         {
-                            TileType = 7;
+                            TileType = 0;
+                        }
+                        else if (TileX == 2)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 3)
+                        {
+                            TileType = 0;
+                        }
+                        else if (TileX == 4)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 5)
+                        {
+                            TileType = 0;
                         }
                         else
                         {
-                            TileType = 0;
+                            TileType = 5;
                         }
                         break;
 
                     case 8:
                         if (TileX == 0)
                         {
-                            TileType = 2;
+                            TileType = 1;
                         }
-                        else if (TileX == 6)
+                        else if (TileX == 1)
                         {
-                            TileType = 3;
+                            TileType = 0;
+                        }
+                        else if (TileX == 2)
+                        {
+                            TileType = 4;
+                        }
+                        else if (TileX == 3)
+                        {
+                            TileType = 5;
+                        }
+                        else if (TileX == 4)
+                        {
+                            TileType = 4;
+                        }
+                        else if (TileX == 5)
+                        {
+                            TileType = 0;
                         }
                         else
                         {
-                            TileType = 6;
+                            TileType = 2;
                         }
 
                         break;

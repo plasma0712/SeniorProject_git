@@ -16,7 +16,7 @@ public class XMLMonster : Singleton<XMLMonster>
         //CreateXml();
         LoadXml();
 
-        MonsterSelectListManager.Instance.Init();
+        //MonsterSelectListManager.Instance.Init();
     }
 
     public void CreateXml() // 기본 틀을 만들기 위해서 제작한 함수
